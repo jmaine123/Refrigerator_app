@@ -1,0 +1,102 @@
+.App {
+    background-color: Bisque;
+    background: url("/Users/user/Desktop/refrig_recipe_app/refrig_app/public/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(210, 210, 210, 0.70);
+    background-blend-mode: overlay;
+}
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.refrigerator div{
+    border: 3px solid brown;
+}
+
+/* .freezer{
+    background-color: aqua;
+}
+
+.fridge{
+    background-color: blue;
+}
+
+.pantry{
+    background-color: brown;
+} */
+
+.refrigerator{
+    grid-area: 1 / 1 / 4 / 2;
+    width: 30vw;
+    height: 90vh;
+    border: 2px solid black;
+    border-radius: 2%;
+}
+
+.refrig-section{
+    padding: 1%;
+    height: 29%;
+    margin-bottom: 3%;
+
+}
+
+.recipe_filter{
+    grid-area: 1 / 2 / 5 / 4;
+    padding: 2%;
+}
+
+.add_groceries{ grid-area: 4 / 1 / 5 / 2;}
+
+
+.changeDisplay{
+    list-style-type: none;
+    text-align: center;
+}
+
+.changeDisplay li{
+    display: inline;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 0%;
+    padding:1%;
+    width: 30%;
+
+}
+
+.recipeOptions{
+    border-radius: 5%;
+    border: 4px solid silver;
+    height: 70vh;
+    overflow: scroll;
+    font-size: 25px;
+    padding: 2%;
+    scrollbar-color: DarkSlateGrey;
+    scrollbar-width: thin;
+    background-color: rgba(255, 255, 255, 0.80);
+}
+
+.showList{
+    display: block;
+}
+
+.hideList{
+    display: none;
+}
+
+.selected{
+    color: aliceblue;
+    background-color: crimson;
+    font-weight: 200;
+}
+
+.ingredList{
+    list-style-type: circle;
+    font-family: Arial, Helvetica, sans-serif;
+}
